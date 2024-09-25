@@ -1,0 +1,39 @@
+* {
+    text-align: center;
+    background-color: burlywood;
+}
+h1 {
+    font-size: 25px;
+    color: rgb(6, 75, 75);
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(150, 41, 110);
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+
+
+ul li {
+    color: rgb(49, 119, 95);
+
+    list-style-type: none;
+
+}
+
+.link-color {
+    color: brown;
+}
+.css-heading {   
+    font-weight: bold;   
+    font-size: 18px;
+}
+
+.img-width {
+    width: 450px;
+}

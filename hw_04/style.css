@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+main {
+  width: 400vh;
+}
+
+.conainer {
+  width: 100%;
+  height: 250px;
+  background-image: url(./imagebanner.jpeg);
+  padding: 80px;
+  background-size: cover;
+  background-position: center;
+}
