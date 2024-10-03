@@ -2,15 +2,39 @@ body {
   margin: 0;
 }
 
-main {
-  width: 400vh;
-}
 
-.conainer {
+header {
   width: 100%;
   height: 250px;
   background-image: url(./imagebanner.jpeg);
-  padding: 80px;
+  padding-bottom: 20px;
   background-size: cover;
   background-position: center;
+  display: flex;
+    flex-direction: column-reverse;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.nav_text {
+  color: white;
+  opacity: 0.5;
+  font-size: 40px;
+  margin-left: 80px;
+  display: flex;
+  
+ 
+}
+
+.nav_icon {
+ height: 60px;
+ margin-right: 15px;
+}
+
+img {
+  height: 100px;
 }
