@@ -1,17 +1,18 @@
-
-
-p {
-    border: 3px;
-    border-color: red;
-    border-bottom: rgb(240, 240, 150);
+* {
+  box-sizing: border-box;
 }
 
-p span {
-    border: 3px;
-    border-color: blue;
+p {
+  width: 500px; 
+  border: 2px solid red;
+  background-color: rgb(237, 237, 199);  
+}
+
+span {
+    border: 2px solid blue;
 }
 
 img {
-    height: 30px;
-    width: 300px;
+  height: 30px;
+  width: 400px;
 }
