@@ -1,1 +1,44 @@
 /* ваш код */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+
+  position: relative;
+}
+
+.card-poster {
+  height: 250px;
+}
+
+.card-rating {
+  width: fit-content;
+  color: white;
+  padding: 4px;
+  top: 12px;
+  left: 10px;
+  position: absolute;
+}
+
+.card-rating_good {
+  background-color:rgb(59,179,58);
+}
+
+.card-rating_bad {
+  background-color: rgb(255,0,0);
+}
+
+.card-ticket {
+    width: fit-content;
+    color: white;
+    background-color: rgb(255,86,0);
+    bottom: 12px;
+    right: 9px;
+    padding: 4px;
+    position: absolute;
+   
+}
