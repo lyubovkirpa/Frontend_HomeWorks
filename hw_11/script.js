@@ -2,7 +2,7 @@
 
 let arrayNames = ["Мария", "Алексей", "Елена", "Дмитрий"];
 let arrayAges = [22, 31, 45, 53];
-let arrayFamilyName = ["Stuart", "Lenon", "Ralf", "Calcin"];
+let arrayFamilyName = ["Клименко", "Кравченко", "Подольская", "Казанцев"];
 
 let newArray = [];
 
