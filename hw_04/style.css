@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
-
 
 header {
   width: 100%;
@@ -11,30 +14,39 @@ header {
   background-size: cover;
   background-position: center;
   display: flex;
-    flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .nav_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-.nav_text {
+
+.logo {
+  height: 100px; 
+}
+
+.nav_section {
   color: white;
   opacity: 0.5;
   font-size: 40px;
   margin-left: 80px;
   display: flex;
-  
- 
+  align-items: center;
 }
 
 .nav_icon {
- height: 60px;
- margin-right: 15px;
+  height: 60px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
-img {
-  height: 100px;
+
+
+input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
 }
+
