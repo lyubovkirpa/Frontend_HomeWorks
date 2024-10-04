@@ -1,90 +1,42 @@
 body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
   /* 100% процентов видимой области в окне браузера для пользователя по высоте */
   min-height: 100vh;
-}
-
-header {
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  height: 80px;
-  background-color: rgb(255, 191, 73);
-
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", system-ui; */
 }
 
-
-
-nav {
-  padding: 20px 30px;
-  
-}
-
-nav > a {
-  color: white;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
+/* элемент займет все оставшееся свободное пространство во flex контейнере родителе */
 main {
-  /* элемент займет все оставшееся свободное пространство во flex контейнере родителе */
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding: 20px 30px;
-  background-color: rgb(227, 227, 227);
+  flex: 1; 
+  padding: 10px 15px;
+  background-color: rgb(147 150 211 / 11%);
 }
 
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: rgb(218, 218, 218);
-}
-
-.grid-cards-container {
+.galery {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 5px;
-  grid-auto-rows: 380px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8px;
 }
 
-/* обращение только к прямым потомкам */
-.grid-cards-container > div {
+.card {
   display: flex;
-  justify-content: center;
-  padding: 20px 25px;
   flex-direction: column;
-  border-radius: 10px;
+  padding: 20px 25px;
+  border-radius: 5px;
   background-color: white;
 }
 
-/* обращение только ко всем дочерним элементам */
-.grid-cards-container h2 {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.card  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
 }
 
-.grid-cards-container img {
+.card img {
   width: 100%;
   margin-bottom: 15px;
 }
-
-/* на всех экранах меньше 390px */
-@media (max-width: 390px) {
-header {
-  background-color: rgb(19, 163, 163);
-}
-
-
-nav > a {
-  display: none;
-}
-}
-
