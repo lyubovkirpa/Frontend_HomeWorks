@@ -7,15 +7,19 @@ let arrayFamilyName = ["Клименко", "Кравченко", "Подольс
 let newArray = [];
 
 // Перебираем массив имен
-for (let i = 0; i < arrayNames.length; i++) {
-  let name = arrayNames[i]; // Текущее имя
-  const age = arrayAges[i]; // Соответствующий возраст
-  const family = arrayFamilyName[i];
+// for (let i = 0; i < arrayNames.length; i++) {
+// let name = arrayNames[i]; // Текущее имя
+// const age = arrayAges[i]; // Соответствующий возраст
+// const family = arrayFamilyName[i];
+// Формируем строку и добавляем в новый массив
+// newArray[i] = `${name} ${family} ${age} лет/годов`;
+// }
 
-  // Формируем строку и добавляем в новый массив
-  newArray[i] = `${name} ${family} ${age} лет/годов`;
+for (let i = 0; i < arrayNames.length; i++) {
+  newArray.push(
+    `${arrayNames[i]} ${arrayFamilyName[i]} ${arrayAges[i]} лет/годов`
+  );
 }
-// Выводим массив только один раз
 console.log(newArray);
 
 console.log();
@@ -41,6 +45,9 @@ console.log(countries);
 
 console.log();
 
+const countriesNew = [deletEl, ...countries, "Испания"];
+console.log(countriesNew);
+
 //TODO   Задание 4 // Создайте объект car с ключами brand, model, year, и isElectric. Задайте им значения. // Выведите на экран все ключи объекта // Выведите на экран все значения объекта // Добавьте в объект car метод getCarInfo, который будет возвращать строку, содержащую информацию о марке, модели и году выпуска машины. // Вызовите этот метод и выведите результат на экран. // выполните итерацию по ключам с помощью цикла for...in. // Внутри цикла выводите на экран каждую пару ключ: значение. // Затем модифицируйте вывод, чтобы он выглядел как: "Ключ: [ключ], Значение: [значение]". Например, "Ключ: brand, Значение: Toyota".
 
 let car = {
@@ -50,6 +57,7 @@ let car = {
   isElectric: true,
   getCarInfo: function () {
     return `${this.brand}, ${this.model}, ${this.year}`;
+    // getCarInfo: () => `${car.brand}, ${car.model}, ${car.year}`;
   },
 };
 
@@ -61,6 +69,10 @@ console.log(Object.values(car));
 
 console.log(car.getCarInfo());
 
+// итерация по ключам и значениям объекта
 for (const key in car) {
   console.log(`Ключ: ${key}, Значение: ${car[key]}`);
 }
+
+
+
