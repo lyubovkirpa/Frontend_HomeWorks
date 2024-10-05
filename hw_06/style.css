@@ -19,25 +19,22 @@ header {
 }
 
 nav {
- 
-  padding: 20px;
+  padding: 10px;
 }
 
 nav a {
   text-decoration: none;
-  /* margin-right: 20px; */
-
   color: white;
+  font-size: 16px;
 }
 
 nav a:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 /* элемент займет все оставшееся свободное пространство во flex контейнере родителе */
 main {
   flex: 1;
-
   padding: 10px 15px;
   background-color: rgb(147 150 211 / 11%);
 }
@@ -63,7 +60,7 @@ main {
   margin-bottom: 10px;
 }
 
-.card img {
+img {
   width: 100%;
   margin-bottom: 15px;
 }
