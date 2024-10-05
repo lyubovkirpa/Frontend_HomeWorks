@@ -1,0 +1,127 @@
+body {
+  /* 100% процентов видимой области в окне браузера для пользователя по высоте */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", system-ui; */
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(123, 40, 40);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  max-width: 400px; /* Не больше 500px на широких экранах */
+    width: 100%;/* Адаптивная ширина для маленьких экранов  */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:not(:last-child) {
+  margin-right: 18px;
+}
+
+.burger-menu {
+  font-size: 30px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-color: brown;
+  }
+
+  .footer_info {
+    background-color: brown;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav >a:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  nav a {
+    display: none;
+  }
+
+  .burger-menu {
+    display: inline;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+/* элемент займет все оставшееся свободное пространство во flex контейнере родителе */
+main {
+  flex: 1;
+  padding: 10px 15px;
+  background-color: rgb(147 150 211 / 11%);
+}
+
+.galery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.card h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer_info {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(123, 40, 40);
+}
+
+
+@media screen and (min-width: 768px) {
+  .footer_info {
+    background-color: brown;
+  }
+}
+
+.footer_link {
+  height: 20px;
+}
+
+/* 
+подключите google fonts - https://fonts.google.com/
+
+добавьте favicon оп вкусу - воспользуйтесь генератором https://realfavicongenerator.net/ */

@@ -3,20 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />  
+    
+    <link rel="shortcut icon" href="./favicon.ico" />   
+
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="">Статьи</a>
+        <a href="">Рецепты </a>
+        <a href="">Акции</a>       
+        <a href="">Каталог</a>
+        <a class="burger-menu" href="">☰</a>
+      </nav>
+    </header>
+    <main>
+      <section class="galery">
+        <article class="card">
+          <h1>Утка</h1>
+          <img src="./images/images_01.png" alt="" />
+          <p>
+            Удивите гостей и домашних — приготовьте птицу на банкет. Расскажем,
+            чем можно начинить утку и какой алкоголь подать к ней на праздничный
+            стол.
+          </p>
+        </article>
+        <article class="card">
+          <h1>Канапе</h1>
+          <img src="./images/images_04.png" alt="" />
+          <p>
+            Такую закуску можно делать не только с сыром и виноградом. Пробуйте
+            свежие варианты: паштет и варенье, рыба и фрукты.
+          </p>
+        </article>
+        <article class="card">
+          <h1>Рыба</h1>
+          <img src="./images/images_02.png" alt="" />
+          <p>
+            Вместо свинины или говядины к праздничному столу можно приготовить
+            красную рыбу, дораду или щуку.
+          </p>
+        </article>
+        <article class="card">
+          <h1>Тарталетки</h1>
+          <img src="./images/images_03.png" alt="" />
+          <p>
+            Гадаете, как легко и необычно разнообразить праздничное меню?
+            Включите в него тарталетки с яркими сочетаниями вкусов.
+          </p>
+        </article>
 
-<!-- 
-1. К предыдущей работе добавьте footer, который будет зафиксирован внизу странице, когда контента мало и будет уходить вниз, когда элементов в main много
+        <article class="card">
+          <h1>Мидии в томатном соусе</h1>
+          <img src="./images/images_06.png" alt="" />
+          <p>
+            Изысканным блюдом не стыдно угостить даже искушенных гурманов. Не
+            забудьте подать к шикарной горячей закуске сухое белое вино.
+          </p>
+        </article>
 
-2. проверьте, что сайте хорошо работает и не съезжает верстка на ширине окна 430px (14 pro max) и 768px (ipad mini) воспользуйтесь media queries. Сделайте так чтобы на этих границах ширины менялся цвет фона header или картинка на его фоне
+        <article class="card">
+          <h1>Бутерброды</h1>
+          <img src="./images/images_08.png" alt="" />
+          <p>
+            Эту закуску можно поставить к салатам, чтобы разнообразить и
+            сбалансировать меню.
+          </p>
+        </article>
 
-3. В футер добавьте информацию о странички и ссылки на контактную информацию, добавьте иконки из font awesome с ссылками на соцсети (для этого их нужно обернуть в тег ссылку) https://fontawesome.com/
-
-4. подключите google fonts - https://fonts.google.com/
-
-5. добавьте favicon оп вкусу - воспользуйтесь генератором https://realfavicongenerator.net/ -->
-
+        <article class="card">
+          <h1>Блюда с морепродуктами</h1>
+          <img src="./images/images_07.png" alt="" />
+          <p>
+            Продукт моря можно запекать, отваривать, тушить, жарить и
+            мариновать. Многие продукты можно сочетать в салатах, подливах и
+            прочих блюдах.
+          </p>
+        </article>
+        <article class="card">
+          <h1>Капкейки</h1>
+          <img src="./images/images_05.png" alt="" />
+          <p>
+            Универсальное и легкое в приготовлении блюдо, которое украсит ваш
+            праздничный стол.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_info">
+        <nav class="footer_nav">
+          <a href="">Информация</a>          
+          <a href="">Адрес</a>
+          <a href="">Контакты </a> 
+          
+          <div class="footer_wrapper">
+            <a href="" class="footer_link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="" class="footer_link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="footer_link"><i class="fa-brands fa-facebook"></i></a>
+                  
+          </div>      
+        </nav>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/04dd2a52ba.js" crossorigin="anonymous"></script>
   </body>
 </html>
