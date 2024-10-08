@@ -3,8 +3,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   /* font-family: "Roboto", system-ui; */
+  font-family: "Great Vibes", cursive;
 }
 
 header {
@@ -118,7 +119,7 @@ img {
 }
 
 .footer_link {
-  height: 20px;
+  font-size: 20px;
 }
 
 /* 
