@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.timer_container {
+    text-align: center;
+}
+
+.timer_display {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.message {
+    display: none; /* Скрыть сообщение по умолчанию */
+    font-size: 24px;
+    color: red;
+    margin-top: 20px;
+}
