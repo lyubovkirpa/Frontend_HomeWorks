@@ -43,6 +43,12 @@ const getLocationInfo = async () => {
       `http://api.weatherapi.com/v1/current.json?key=94b25103b10948d693083138241610&q=${responseBody.country}&aqi=no`
     );
 
+    // console.log(responseBody.latitude);
+    // console.log(responseBody.longitude);
+    // https://api.opencagedata.com/geocode/v1/json?q=${responseBody.latitude}+${responseBody.longitude}&key=94b25103b10948d693083138241610
+    // https://get.geojs.io/v1/ip/geo.json    
+
+
     const responseBody1 = await fetchResult1.json();
     console.log(responseBody1);
 
@@ -52,10 +58,10 @@ const getLocationInfo = async () => {
     temperatureText.textContent = `${responseBody1.current.temp_c}°`;
     iconImg.src = responseBody1.current.condition.icon;
 
-    const newDate = new Date("2024-10-17 00:16");
+    const newDate = new Date("2024-10-17 07:10");
     // console.log(newDate);
 
-    // const dayOfWeek = newDate.getDay(); //3
+    // const dayOfWeek = newDate.getDay(); //4
     // const month = newDate.getMonth(); //10
     // const currentDate = newDate.getDate(); //16
 
@@ -89,8 +95,7 @@ const getLocationInfo = async () => {
 
     date.textContent = `${dayOfWeek}, ${month} ${currentDate}`;
 
-    // console.log(responseBody.latitude);
-    // console.log(responseBody.longitude);
+   
 
     const fetchResult2 = await fetch(
       `http://api.weatherapi.com/v1/forecast.json?key=94b25103b10948d693083138241610&q=${responseBody.country}&days=7&aqi=no`
